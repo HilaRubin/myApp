@@ -1,0 +1,31 @@
+{% extends "matcher/base.html" %}
+{% load static %}
+
+{% block page_content %}
+<h1>The selected position:</h1>
+    <h2>{{ job.title }}</h2>
+<div class="row">
+    <div class="col-md-4">
+        <h5>Published date:</h5>
+        <p>{{ job.pub_date }}</p>
+        <h5>Requirements:</h5>
+        <p>{{ skills|join:", " }}</p>
+        <h5>The most suitable candidates for the '{{ job.title }}' position:</h5>
+        <ul>
+            {% if candidates_details %}
+                {% for candidate in candidates_details %}
+                    <li>
+                        <p>
+                        <b>Candidate name:</b> {{ candidate.c_name }} <br>
+                        <b>Candidate skills:</b> {{ candidate.c_skills }} <br>
+                        <b>Candidate fit level:</b> {{ candidate.c_grade }}/{{ skills|length }}
+                        </p>
+                    </li>
+                {% endfor %}
+            {% else %}
+                <p>No suitable Candidates found.</p>
+            {% endif %}
+        </ul>
+    </div>
+</div>
+{% endblock %}

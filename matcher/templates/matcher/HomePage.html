@@ -1,0 +1,20 @@
+{% extends "matcher/base.html" %}
+{% block page_content %}
+<h1>Available Jobs</h1>
+<div class="row">
+{% for job in job_list %}
+    <div class="col-md-4">
+        <div class="card mb-2">
+            <div class="card-body">
+                <h5 class="card-title">{{ job.title }}</h5>
+                <p class="card-text">{{ job.pub_date }}</p>
+                <a href="{% url 'job_detail' job.pk %}"
+                   class="btn btn-primary">
+                    Read More
+                </a>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
