@@ -1,12 +1,15 @@
 # Basic Matcher Assignment
-### By Hila Rubin
+A Django web app for matching candidates for relevant jobs.
+
+By Hila Rubin
 
 ## Requirements
 
 * Python 3.7
 * Django 3.2
 
-## Installation
+## Installation 
+For Windows:
 ```
 1. git clone https://github.com/HilaRubin/myApp
 2. python -m venv matcherEnv
