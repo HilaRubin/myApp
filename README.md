@@ -8,14 +8,14 @@
 
 ## Installation
 ```
-python -m venv matcherEnv
-matcherEnv\Scripts\activate.bat
-pip install -r requirements.txt
+1. git clone https://github.com/HilaRubin/myApp
+2. python -m venv matcherEnv
+3. matcherEnv\Scripts\activate.bat
+4. pip install -r requirements.txt
+5. python manage.py runserver
 ```
+
 ## That's it, we're done!
-```
-python manage.py runserver
-```
 Now you can enter your browser with http://localhost:8000/matcher/
 
 
