@@ -9,13 +9,14 @@ By Hila Rubin
 * Django 3.2
 
 ## Installation 
-For Windows:
+For Windows open cmd (run as administrator):
 ```
 1. git clone https://github.com/HilaRubin/myApp
-2. python -m venv matcherEnv
-3. matcherEnv\Scripts\activate.bat
-4. pip install -r requirements.txt
-5. python manage.py runserver
+2. cd myApp
+3. python -m venv matcherEnv
+4. matcherEnv\Scripts\activate.bat
+5. pip install -r requirements.txt
+6. python manage.py runserver
 ```
 
 ## That's it, we're done!
